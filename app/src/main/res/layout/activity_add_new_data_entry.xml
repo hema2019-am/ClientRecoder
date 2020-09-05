@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewDataEntry"
+    android:background="@color/background"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/addClientToolbar"/>
+
+
+
+
+    <EditText
+        android:id="@+id/edt_client_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edit_background"
+        android:ems="15"
+        android:hint="Enter Client Mobile Number"
+        android:textColorHint="@android:color/black"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/btn_validateNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_client_number"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@color/button_background"
+        android:text="Validate Mobile Number"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/innerRelative_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_validateNumber"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        >
+
+        <EditText
+            android:id="@+id/edt_pgName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:hint="Property/PG Name"
+            android:textColorHint="@android:color/black"
+            android:visibility="invisible"
+            />
+
+        <EditText
+            android:id="@+id/edt_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_pgName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:hint="City"
+            android:textColorHint="@android:color/black"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/edt_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_city"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:hint="Area/Locality"
+            android:textColorHint="@android:color/black"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/edt_ownerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_area"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:hint="OwnerName (Optional)"
+            android:textColorHint="@android:color/black"
+            android:visibility="invisible"/>
+
+        <EditText
+            android:id="@+id/edt_PreferLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_ownerName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/edit_background"
+            android:ems="10"
+            android:hint="Preferred Language (Optional)"
+            android:textColorHint="@android:color/black"
+            android:visibility="invisible"/>
+
+        <Button
+            android:id="@+id/btn_submitEntry"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_PreferLanguage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@color/button_background"
+            android:text="Submit"
+            android:visibility="invisible"/>
+    </LinearLayout>
+
+
+</LinearLayout>

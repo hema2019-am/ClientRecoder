@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homePAGE"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/menus"
+        android:background="@color/colorPrimary"
+        app:title="Home Page"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btn_dataEntry"
+        android:layout_width="160dp"
+        android:layout_height="167dp"
+        android:src="@drawable/data_entry"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Entry"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/btn_dataValidation"
+        android:layout_width="160dp"
+        android:layout_height="167dp"
+        android:src="@drawable/data_validation"
+        app:civ_border_color="#FF000000"
+        app:civ_border_width="2dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Validation"
+        android:textSize="30sp"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+</LinearLayout>

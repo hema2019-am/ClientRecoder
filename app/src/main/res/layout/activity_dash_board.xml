@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoard"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/dashboardToolbar"/>
+
+    <Button
+        android:id="@+id/btn_new_data_entry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:text="Submit New Data Entry"
+        android:background="@color/button_background"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DASHBOARD"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:id="@+id/txt_application_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Submitted -"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            />
+
+        <TextView
+            android:id="@+id/number_submitted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_toRightOf="@id/txt_application_sub"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txt_pending_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending Approval -"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_application_sub"
+            />
+
+        <TextView
+            android:id="@+id/number_approval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/txt_pending_approval"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/number_submitted"/>
+
+        <TextView
+            android:id="@+id/txt_application_approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Approved -"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/txt_pending_approval"
+            />
+
+        <TextView
+            android:id="@+id/number_approved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/txt_application_approved"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@id/number_approval"/>
+
+        <TextView
+            android:id="@+id/txt_application_rejected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Application Rejected -"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_application_approved"
+            />
+
+        <TextView
+            android:id="@+id/number_rejected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:layout_toRightOf="@id/txt_application_rejected"
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+            android:textColor="@android:color/black"
+            android:layout_below="@id/number_approved"/>
+
+        <TextView
+            android:id="@+id/txt_lead_generated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lead Generated -"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/txt_application_rejected"
+            />
+
+        <TextView
+            android:id="@+id/number_generated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@id/txt_lead_generated"
+            android:textSize="20sp"
+            android:layout_marginLeft="40dp"
+            android:layout_below="@id/number_rejected"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

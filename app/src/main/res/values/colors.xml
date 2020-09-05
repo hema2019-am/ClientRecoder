@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="background">#81CCC5</color>
+    <color name="logOutColor">#89B9B3</color>
+    <color name="button_background">#339C93</color>
+    <color name="client_background">#529690</color>
+</resources>
